@@ -13,6 +13,7 @@ public class Main {
         System.out.println(wordsChecker.hasWord("qasqw"));
         System.out.println(wordsChecker.hasWord("sint"));
         System.out.println(wordsChecker.hasWord("est1"));
+        System.out.println(wordsChecker.hasWord("cupidatat"));
 
     }
 }

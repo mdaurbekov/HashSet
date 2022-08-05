@@ -1,15 +1,21 @@
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 public class WordsChecker {
     private String string = "";
+    private Set<String> set;
 
     public WordsChecker(String string) {
         this.string = string;
+        set = new HashSet<>(List.of(this.string.split("\\P{IsAlphabetic}+")));
+
     }
 
     public boolean hasWord(String word) {
-        HashSet<String> set = new HashSet<>(List.of(string.split("\\P{IsAlphabetic}+")));
-        return set.contains(word);
+
+
+        return this.set.contains(word);
     }
 }
